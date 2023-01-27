@@ -8,7 +8,7 @@
 </head>
 
   <body>
-    <header class main-header>
+    <header class="main-header">
       <img class="header-logo" src="#" alt="Логотип">
       <nav class="menu">
         <ul class="menu-list">
@@ -25,13 +25,13 @@
         <ul class="icon-menu">
           <li class="icon-menu-item">
             <a class="small-button" href="#">
-              <img class="icon-search" alt="Лупа">
+              <img class="icon-search" src="#" alt="Лупа">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="icon-menu-item">
             <a class="small-button" href="#">
-              <img class="icon-heart" href="#" alt="Сердечко">
+              <img class="icon-heart" src="#" alt="Сердечко">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -80,6 +80,7 @@
                   Wi-fi
                 </label>
               </li>
+            </ul>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -111,21 +112,22 @@
       </section>
       <section>
         <h2>Найдено гостиниц:</h2>
+        <span class="search-result">38</span>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
         <a href="#" class="button">
-          <img class="icon-table" href="#" alt="Табличка">
+          <img class="icon-table" src="" alt="Табличка">
           <span class="visually-hidden">Показать таблицу</span>
         </a>
         <a href="#" class="button">
-          <img class="icon-card" href="#" alt="Карточка">
+          <img class="icon-card" src="" alt="Карточка">
           <span class="visually-hidden">Показать карточку</span>
         </a>
         <a class="button" href="#">
-          <img class="icon-list" href="#" alt="Список">
+          <img class="icon-list" src="" alt="Список">
           <span class="visually-hidden">Показать список</span>
         </a>
         <ul class="hotels-link">
@@ -213,9 +215,14 @@
         </ul>
       </section>
 
+      <section class="to-book">
+        <h2 class="titles">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
       <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="titles">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input class="email-field" type="email" placeholder="Ваш e-mail" required>
           <input class="button" type="submit" value="Подписаться">
@@ -247,7 +254,7 @@
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="made-in" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Html Academy</span>
-        <img class="icon-html" href="#" alt="Html Academy">
+        <img class="icon-html" src="" alt="Html Academy">
       </a>
     </footer>
   </body>
