@@ -1,12 +1,12 @@
 .subscription {
-  background-image: url("/images/main/Subscribe.jpg");
+  background-image: url("/images/main/subscribe.jpg");
   width: 1200px;
   height: 414px;
   background-repeat: no-repeat;
 }
 
 .catalog-hotels {
-  background-image: url("/images/catalog/Фильтр.jpg");
+  background-image: url("/images/catalog/filter.jpg");
   width: 1200px;
   height: 412px;
   background-repeat: no-repeat;
