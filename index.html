@@ -3,12 +3,13 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <header class="main-header">
-      <img class="header-logo" src="#" alt="Логотип">
+      <img class="header-logo" src="images/header/logo.png" width:="140" height="70" alt="Логотип">
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
@@ -18,20 +19,19 @@
             <a class="menu-link" href="#">О Седоне</a>
           </li>
           <li class="menu-list-item">
-            <a class="menu-link" href="#">Гостиницы</a>
+            <a class="menu-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="icon-menu">
           <li class="icon-menu-item">
             <a class="small-button" href="#">
-              <img class="icon-search" src="#" alt="Лупа">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="icon-menu-item">
             <a class="small-button" href="#">
-              <img class="icon-heart" src="#" alt="Сердечко">
               <span class="visually-hidden">Избранное</span>
+              <span class="favourites">12</span>
             </a>
           </li>
           <li class="icon-menu-item">
@@ -43,8 +43,8 @@
     <main>
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-        <img src="#" alt="Горы">
-        <img src="" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой.">
+        <img src="images/main/group37.svg" width:="458" height="352"
+          alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой.">
         <h2 class="titles">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -55,7 +55,8 @@
           <li class="advantages-list-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="descriptions">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-photo" src="" alt="Терасса на фоне гор">
+            <img class="advantages-photo" src="images/main/photo-1.jpg" width:="800" height="384"
+              alt="Терасса на фоне гор">
           </li>
           <li class="advantages-list-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -70,7 +71,7 @@
             <p class="descriptions">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-list-item">
-            <img class="advantages-photo" src="" alt="Мост Дьявола">
+            <img class="advantages-photo" src="images/main/photo-2.jpg" width:="800" height="385" alt="Мост Дьявола">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="descriptions">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -82,17 +83,14 @@
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="recommendations-list">
           <li class="recommendations-list-item">
-            <img class="recommendations-icon" src="" alt="Домик">
             <h3 class="recommendations-title">Жильё</h3>
             <p class="descriptions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="recommendations-list-item">
-            <img class="recommendations-icon" src="" alt="Бургер">
             <h3 class="recommendations-title">Еда</h3>
             <p class="descriptions">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="recommendations-list-item">
-            <img class="recommendations-icon" src="" alt="Подарочная коробочка">
             <h3 class="recommendations-title">Сувениры</h3>
             <p class="descriptions">Не только китайского, но и настоящего местного производства!
             </p>
@@ -119,19 +117,16 @@
       <ul class="socials-list">
         <li class="socials-list-item">
           <a class="small-button" href=" https://vk.com/htmlacademy">
-            <img class="socials-icon" src="#" alt="Логотип Вконтакте">
             <span class="visually-hidden"> В контакте</span>
           </a>
         </li>
         <li class="socials-list-item">
           <a class="small-button" href="https://t.me/htmlacademy">
-            <img class="socials-icon" src="#" alt="Логотип Телеграм">
             <span class="visually-hidden"> Телеграм</span>
           </a>
         </li>
         <li class="socials-list-item">
           <a class="small-button" href="https://www.youtube.com/user/htmlacademy">
-            <img class="socials-icon" src="#" alt="Логотип Youtube">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -139,7 +134,7 @@
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="made-in" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Html Academy</span>
-        <img class="icon-html" src="" alt="Html Academy">
+        <img class="icon-html" src="images/footer/htmlacademy.svg" alt="Html Academy">
       </a>
     </footer>
   </body>
