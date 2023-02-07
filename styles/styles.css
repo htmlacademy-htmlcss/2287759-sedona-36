@@ -16,6 +16,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   background-color: white;
@@ -27,7 +28,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
-  }
+}
 
 .icon-menu-item a {
   font-weight: 700;
@@ -36,20 +37,84 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.hero{
+
+.hero {
   background-image: url("/images/main/index-background.jpg");
   background-repeat: no-repeat;
 }
+
+.titles {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.titles-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.advantages-recommendations-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.to-book a {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .subscription {
   background-image: url("/images/main/subscribe.jpg");
-  width: 1200px;
-  height: 414px;
   background-repeat: no-repeat;
 }
 
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.result-title,
+.search-result {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.hotel-card a {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-card-button, button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
 .catalog-hotels {
   background-image: url("/images/catalog/filter.jpg");
-  width: 1200px;
-  height: 412px;
   background-repeat: no-repeat;
 }
