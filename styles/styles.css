@@ -50,9 +50,23 @@ body {
   min-height: 100%;
 }
 
-.container {
-  flex-grow: 1;
+.main-header {
+  margin: 0 70px;
+  display: flex;
 }
+
+.menu {
+  width: 892px;
+  display: flex;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+.menu-list{display: flex;
+}
+
+.icon-menu{display: flex;}
+
 
 .menu-link {
   font-weight: 700;
@@ -70,6 +84,9 @@ body {
   text-transform: uppercase;
   color: #333333;
 
+}
+.container {
+  flex-grow: 1;
 }
 
 .hero {
