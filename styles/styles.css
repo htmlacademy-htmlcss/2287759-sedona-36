@@ -210,7 +210,13 @@ button {
   background-image: url("../images/catalog/filter.jpg");
   background-repeat: no-repeat;
 }
-.footer-page{display: flex; justify-content: space-around;}
+
+.footer-page {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .socials-list {
   width: 142px;
 }
@@ -222,7 +228,8 @@ button {
   font-weight: 400;
   color: #000000;
   width: 720px;
-    }
+  text-align: center;
+  }
 
 .made-in {
   width: 115px;
