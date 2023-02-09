@@ -51,16 +51,19 @@ body {
 }
 
 .main-header {
-  margin: 0 70px;
-  display: flex;
+  margin:0 auto;
+   width: 1200px;
+   display: flex;
+
 }
 
 .menu {
+  margin:0;
   width: 892px;
   display: flex;
-  margin-left: 30px;
   justify-content: space-between;
-}
+  padding-left: 30px;
+  }
 
 .menu-list {
   display: flex;
@@ -68,6 +71,7 @@ body {
 
 .icon-menu {
   display: flex;
+  width: 268px;
 }
 
 
