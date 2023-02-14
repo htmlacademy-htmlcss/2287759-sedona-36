@@ -104,7 +104,9 @@ body {
   background-image: url("../images/main/index-background.jpg");
   background-repeat: no-repeat;
 }
-
+.welcome{margin-top: 51px;
+  margin-left: 371px;
+}
 .titles {
   margin: 0;
   font-size: 30px;
