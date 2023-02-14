@@ -49,7 +49,11 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-.header-logo{margin-left: 70px;}
+
+.header-logo {
+  margin-left: 70px;
+}
+
 .main-header {
   margin: 0 auto;
   width: 1200px;
@@ -104,9 +108,12 @@ body {
   background-image: url("../images/main/index-background.jpg");
   background-repeat: no-repeat;
 }
-.welcome{margin-top: 51px;
+
+.welcome {
+  margin-top: 51px;
   margin-left: 371px;
 }
+
 .titles {
   margin: 0;
   font-size: 30px;
@@ -212,7 +219,7 @@ body {
 }
 
 .catalog-filter {
- width: inherit;
+  width: inherit;
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
