@@ -51,19 +51,19 @@ body {
 }
 
 .main-header {
-  margin:0 auto;
-   width: 1200px;
-   display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
 
 }
 
 .menu {
-  margin:0;
+  margin: 0;
   width: 892px;
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
-  }
+}
 
 .menu-list {
   display: flex;
@@ -167,15 +167,51 @@ body {
   background-repeat: no-repeat;
 }
 
+.subscription-inner {
+  margin: 96px 258px 104px 298px;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
 
+.catalog-hotels-background {
+  background-image: url("../images/catalog/filter.jpg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-hotels {
+  width: 1060px;
+  margin-top: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+
+}
+
+.catalog-filter {
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .catalog-filter-title {
@@ -184,11 +220,45 @@ body {
   font-weight: 700;
 }
 
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 338px;
+  margin-right: 192px;
+}
+
+.select-control {
+  width: 292px;
+}
+
+.views {
+  width: 160px;
+  margin-left: 70px;
+}
+
+.result-select-views {
+  display: flex;
+  width: 1060px;
+  margin: 50px auto;
+}
+
 .result-title,
 .search-result {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.hotels-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 40px auto;
+}
+
+.hotel-card {
+  width: 340px;
 }
 
 .hotel-card a {
@@ -209,11 +279,12 @@ button {
   font-weight: 700;
 }
 
-
-.catalog-hotels {
-  background-image: url("../images/catalog/filter.jpg");
-  background-repeat: no-repeat;
+.pagination {
+  width: 1060px;
+  display: flex;
+  justify-content: flex-start;
 }
+
 
 .footer-page {
   padding: 0 80px;
@@ -233,7 +304,7 @@ button {
   color: #000000;
   width: 720px;
   text-align: center;
-  }
+}
 
 .made-in {
   width: 115px;
