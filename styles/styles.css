@@ -171,6 +171,11 @@ body {
   margin: 96px 258px 104px 298px;
 }
 
+.container-inner {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
@@ -202,7 +207,7 @@ body {
 }
 
 .catalog-filter {
-  width: 1060px;
+ width: inherit;
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
@@ -238,7 +243,7 @@ body {
 
 .result-select-views {
   display: flex;
-  width: 1060px;
+  width: inherit;
   margin: 50px auto;
 }
 
@@ -253,7 +258,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1060px;
+  width: inherit;
   margin: 40px auto;
 }
 
@@ -280,7 +285,7 @@ button {
 }
 
 .pagination {
-  width: 1060px;
+  width: inherit;
   display: flex;
   justify-content: flex-start;
 }
