@@ -9,7 +9,7 @@
 
   <body>
     <header class="main-header">
-      <img class="header-logo" src="images/header/logo.png" width:="140"  height="70"  alt="Логотип">
+      <img class="header-logo" src="images/header/logo.png" width:="140" height="70" alt="Логотип">
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
@@ -40,8 +40,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <section class="catalog-hotels">
+    <main class="container">
+      <section class="catalog-hotels catalog-hotels-background">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -104,31 +104,41 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <input class="button" type="reset" value="Сбросить">
+          <div class="buttons">
+            <button class="button" type="submit">Применить</button>
+            <input class="button" type="reset" value="Сбросить">
+          </div>
         </form>
       </section>
-      <section>
-       <h2 class="result-title">Найдено гостиниц:</h2>
-        <span class="search-result">38</span>
+      <section class="container-inner">
+        <div class="result-select-views">
+        <div class="quantity">
+          <h2 class="result-title">Найдено гостиниц:</h2>
+          <span class="search-result">38</span>
+        </div>
+
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать таблицу</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать карточку</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+
+        <div class="views"> <a href="#" class="button">
+            <span class="visually-hidden">Показать таблицу</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать карточку</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
+      </div>
         <ul class="hotels-link">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg"  width:="300"  height="212" alt="Звездное небо из горной пещеры">
+              <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width:="300" height="212"
+                alt="Звездное небо из горной пещеры">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <p> <span class="type-item">Гостиница</span>
@@ -143,7 +153,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width:="300"  height="212" alt="Радуга и клубящиеся облака над скалами">
+              <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width:="300" height="212"
+                alt="Радуга и клубящиеся облака над скалами">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <p> <span class="type-item">Гостиница</span>
@@ -158,7 +169,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width:="300"  height="212" alt="Голубое небо и скалы в окружении зеленых кустарников">
+              <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width:="300" height="212"
+                alt="Голубое небо и скалы в окружении зеленых кустарников">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <p> <span class="type-item">Гостиница</span>
@@ -173,7 +185,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width:="300"  height="212" alt="Красные скалы на фоне звездного неба">
+              <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width:="300" height="212"
+                alt="Красные скалы на фоне звездного неба">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p> <span class="type-item">Гостиница</span>
@@ -210,12 +223,7 @@
         </ul>
       </section>
 
-      <section class="to-book">
-        <h2 class="titles">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-      </section>
-      <section class="subscription">
+            <section class="subscription-inner">
         <h2 class="titles">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
