@@ -253,7 +253,7 @@ body {
   line-height: 78px;
   font-weight: 700;
   margin: 0;
-  }
+}
 
 .catalog-hotels-background {
   background-image: url("../images/catalog/filter.jpg");
@@ -376,6 +376,14 @@ button {
 
 .socials-list {
   width: 142px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.socials-list-item{
+  min-width: 24px;
+  min-height: 17px;
+  margin: 12px auto;
 }
 
 .phone-number {
