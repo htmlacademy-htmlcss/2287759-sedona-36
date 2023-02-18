@@ -118,6 +118,10 @@ body {
   width: 1200px;
 }
 
+.container p {
+  margin: 0 auto;
+}
+
 .hero {
   background-image: url("../images/main/index-background.jpg");
   background-repeat: no-repeat;
@@ -139,7 +143,8 @@ body {
 }
 
 .titles {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -151,21 +156,29 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  margin: 0 auto;
 }
 
 .advantages {
   margin-top: 69px;
 }
 
+.advantages p {
+  margin-top: 62px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 69px;
+  margin-top: 90px;
 }
 
 .city-pons-padding {
   padding-top: 102px;
+  color: #FFFFFF;
 }
 
 .advantages-recommendations-title {
@@ -179,6 +192,7 @@ body {
   background-color: #82B3D3;
   width: 1200px;
   display: flex;
+
 }
 
 
@@ -188,7 +202,6 @@ body {
   padding-top: 112px;
   padding-bottom: 112px;
 
-
 }
 
 .advantages-list-item-grey {
@@ -197,22 +210,28 @@ body {
   padding-top: 112px;
   padding-bottom: 112px;
 
+
 }
 
 .recommendations {
-  margin-top: 69px;
-}
+  margin-top: 64px;
+  }
 
 .recommendations-list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 64px;
-}
+  }
 
 .recommendations-list-item {
   width: 400px;
-}
-
+  padding-top: 81px;
+   }
+   .recommendations-list-item p{
+    padding:30px 85px 81px 85px;
+   }
 .to-book {
   margin: 96px 304px;
 }
@@ -231,6 +250,7 @@ body {
   background-repeat: no-repeat;
   background-position: 100%;
   padding: 96px 258px 104px 258px;
+  color: #FFFFFF;
 }
 
 .subscription-inner {
@@ -275,7 +295,7 @@ body {
 .catalog-hotels {
   width: inherit;
   margin: 0;
-
+  color: #FFFFFF;
 }
 
 .catalog-filter {
@@ -287,6 +307,7 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   flex-wrap: wrap;
+  padding-bottom: 70px;
 
 }
 
@@ -380,7 +401,8 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.socials-list-item{
+
+.socials-list-item {
   min-width: 24px;
   min-height: 17px;
   margin: 12px auto;
