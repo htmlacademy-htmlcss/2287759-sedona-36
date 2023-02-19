@@ -328,9 +328,13 @@ body {
 
 .quantity {
   display: flex;
-  align-items: center;
-  width: 338px;
+   width: 338px;
+   align-items: center;
   margin-right: 192px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .select-control {
@@ -340,13 +344,20 @@ body {
 .views {
   width: 160px;
   margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
 }
+.views a{
 
+  width: 48px;
+  height: 48px;
+}
 .result-select-views {
   display: flex;
   width: inherit;
   margin: 50px auto;
-}
+  align-items: center;
+  }
 
 .result-title,
 .search-result {
