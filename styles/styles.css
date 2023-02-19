@@ -157,7 +157,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-}
+ }
 
 .advantages {
   margin-top: 69px;
@@ -215,7 +215,7 @@ body {
 
 .recommendations {
   margin-top: 64px;
-  }
+}
 
 .recommendations-list {
   display: flex;
@@ -223,15 +223,17 @@ body {
   flex-wrap: wrap;
   text-align: center;
   margin-top: 64px;
-  }
+}
 
 .recommendations-list-item {
   width: 400px;
   padding-top: 81px;
-   }
-   .recommendations-list-item p{
-    padding:30px 85px 81px 85px;
-   }
+}
+
+.recommendations-list-item p {
+  padding: 30px 85px 81px 85px;
+}
+
 .to-book {
   margin: 96px 304px;
 }
@@ -251,10 +253,11 @@ body {
   background-position: 100%;
   padding: 96px 258px 104px 258px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .subscription-inner {
-  margin: 96px 258px 104px 298px;
+   text-align: center;
 }
 
 .container-inner {
@@ -390,7 +393,10 @@ button {
 
 
 .footer-page {
-  padding: 0 80px;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
