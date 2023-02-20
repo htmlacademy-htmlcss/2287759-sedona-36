@@ -85,6 +85,7 @@ body {
   width: 268px;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 
@@ -102,13 +103,24 @@ body {
   margin: 22px auto;
 }
 
-.icon-menu-item a {
+.icon-menu-item-button {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+  width: 160px;
+  text-align: center;
+}
+
+.button-here {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #333333;
+  color: #FFFFFF;
+  padding: 8px 34px;
+  background-color: #756157;
+  border-radius: 4px;
 
 }
 
@@ -149,6 +161,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .titles-description {
@@ -157,13 +171,13 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
- }
+}
 
 .advantages {
   margin-top: 69px;
 }
 
-.advantages p {
+.advantages-list p {
   margin-top: 62px;
   padding-left: 85px;
   padding-right: 85px;
@@ -243,21 +257,71 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-decoration: none;
-  color: #333333;
-  padding-left: 158px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  width: 376px;
+  margin: 54px auto;
+  padding: 8px 50px;
+  background-color: #756157;
+  border-radius: 4px;
 }
 
 .subscription {
   background-image: url("../images/main/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
+  margin-top: 96px;
   padding: 96px 258px 104px 258px;
-  color: #FFFFFF;
   text-align: center;
 }
 
+.subscription h2 {
+  color: #FFFFFF;
+}
+
 .subscription-inner {
-   text-align: center;
+  margin: 56px auto;
+  text-align: center;
+}
+
+.subscription-inner form {
+  margin: 54px auto;
+  width: 684px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.subscription form {
+  margin-top: 54px;
+  width: 684px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-field {
+  width: 452px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  background-color: F2F2F2;
+  border: none;
+}
+
+.subscription-button {
+  width: 232px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .container-inner {
@@ -317,7 +381,31 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: inherit;
+  border: none;
+}
+
+.button-apply {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 191px;
+  padding: 8px 50px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
 }
 
 .catalog-filter-title {
@@ -328,8 +416,8 @@ body {
 
 .quantity {
   display: flex;
-   width: 338px;
-   align-items: center;
+  width: 338px;
+  align-items: center;
   margin-right: 192px;
   font-size: 30px;
   line-height: 36px;
@@ -339,6 +427,14 @@ body {
 
 .select-control {
   width: 292px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .views {
@@ -347,17 +443,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.views a{
+
+.views a {
 
   width: 48px;
   height: 48px;
 }
+
 .result-select-views {
   display: flex;
   width: inherit;
-  margin: 50px auto;
+  margin-top: 50px;
   align-items: center;
-  }
+}
 
 .result-title,
 .search-result {
@@ -376,7 +474,7 @@ body {
 
 .hotel-card {
   width: 340px;
-}
+  }
 
 .hotel-card a {
   text-decoration: none;
@@ -387,10 +485,10 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-}
+  margin: 0;
+   }
 
-.hotel-card-button,
-button {
+.hotel-card-button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -402,6 +500,27 @@ button {
   justify-content: flex-start;
 }
 
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  display: block;
+  padding: 11px 23px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.pagination-link span {
+  color: #000;
+}
 
 .footer-page {
   width: 1200px;
