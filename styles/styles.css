@@ -476,15 +476,16 @@ body {
   width: 340px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  
 }
-
+.card-content{
+  width: 300px;
+  margin: 20px;
+}
 .hotel-card-link {
   text-decoration: none;
   color: #000;
-  padding-left: 20px;
-}
+ }
 
 .hotel-card-title {
   font-size: 24px;
@@ -532,8 +533,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 300px;
-  padding-left: 20px;
-  margin-top: 16px;
+   margin-top: 16px;
 }
 
 
