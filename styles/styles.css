@@ -493,7 +493,13 @@ body {
   line-height: 20px;
   font-weight: 700;
 }
-
+.hotel-card span{
+  display: block;
+}
+.type-price, .hotel-button, .stars{
+  display: flex;
+  justify-content: space-between;
+}
 .pagination {
   width: inherit;
   display: flex;
