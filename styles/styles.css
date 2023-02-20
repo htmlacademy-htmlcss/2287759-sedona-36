@@ -80,6 +80,14 @@ body {
   margin: 20px auto;
 }
 
+.menu-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color:#000000;
+}
+
 .icon-menu {
   display: flex;
   width: 268px;
@@ -89,13 +97,7 @@ body {
 }
 
 
-.menu-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #333333;
-}
+
 
 .icon-menu-item {
   min-width: 20px;
@@ -401,7 +403,6 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
-  width: 191px;
   padding: 8px 50px;
   background-color: #82B3D3;
   border-radius: 4px;
@@ -476,16 +477,18 @@ body {
   width: 340px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  
+
 }
-.card-content{
+
+.card-content {
   width: 300px;
   margin: 20px;
 }
+
 .hotel-card-link {
   text-decoration: none;
   color: #000;
- }
+}
 
 .hotel-card-title {
   font-size: 24px;
@@ -533,7 +536,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 300px;
-   margin-top: 16px;
+  margin-top: 16px;
 }
 
 
@@ -543,7 +546,7 @@ body {
   justify-content: flex-start;
 }
 
-.pagination-item {
+.pagination-item:not(:first-child) {
   width: 60px;
   height: 60px;
   background-color: #82B3D3;
@@ -564,7 +567,10 @@ body {
 .pagination-link span {
   color: #000;
 }
-
+.pagination-current{
+  background-color: #FFFFFF;
+  color: #000;
+     }
 .footer-page {
   width: 1200px;
   margin: 0 auto;
