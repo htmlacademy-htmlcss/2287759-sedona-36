@@ -517,7 +517,11 @@ body {
   text-decoration: none;
   color: #000;
 }
-
+.hotel-card-image{
+  width:300px;
+  object-fit: contain;
+  background-color: #FFFFFF;
+}
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
