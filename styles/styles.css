@@ -185,12 +185,26 @@ body {
   padding-right: 85px;
 }
 
-.advantages-list {
+/*сетка грид*/
+.advantages-list{
+  display: grid;
+  text-align: center;
+  width:1200px;
+  grid-template-columns:  400px 400px 400px;
+  margin-top: 69px;
+}
+.advantages-list-item img{
+  width: 800px;
+  object-fit: contain;
+  background-color:#82B3D3;
+}
+
+/*.advantages-list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   margin-top: 90px;
-}
+}*/
 
 .city-pons-padding {
   padding-top: 102px;
@@ -202,13 +216,14 @@ body {
   line-height: 28px;
   font-weight: 700;
   margin: 0;
+
 }
 
 .advantages-list-item {
   background-color: #82B3D3;
   width: 1200px;
   display: flex;
-
+  grid-column: 1/-1; //сетка грид
 }
 
 
@@ -465,20 +480,27 @@ body {
   font-weight: 700;
 }
 
+.hotels-link{
+  display: grid;
+width: 1060px;
+grid-template-columns: 340px 340px 340px;
+gap:20px;
+}
+/*
 .hotels-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: inherit;
   margin: 40px auto;
-}
+}*/
 
 .hotel-card {
   width: 340px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-
 }
+
 
 .card-content {
   width: 300px;
@@ -496,7 +518,7 @@ body {
   font-weight: 700;
   margin: 0;
   padding-top: 16px;
-  padding-left: 20px;
+ /* padding-left: 20px;      сетка грид*/
 }
 
 .hotel-card-button {
