@@ -291,22 +291,40 @@ body {
 .recommendations-list-item {
   width: 400px;
   padding-top: 81px;
-}
-.house-background{
+ }
+
+.house::before{
+  content: "";
+  display: block;
   background-image: url("../images/main/house.svg");
-  background-repeat: no-repeat;
- background-position: top;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: 164px;
 }
-.food-background{
+.food::before{
+  content: "";
+  display: block;
   background-image: url("../images/main/food.svg");
-  background-repeat: no-repeat;
-  background-position: top;
+  width: 74px;
+  height: 70px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: 164px;
 }
-.present-background{
+.present::before{
+  content: "";
+  display: block;
   background-image: url("../images/main/present.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  width: 64px;
+  height: 76px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: 164px;
 }
+
 .recommendations-list-item p {
   padding: 30px 85px 81px 85px;
 }
