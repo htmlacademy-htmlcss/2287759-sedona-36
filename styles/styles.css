@@ -103,8 +103,39 @@ body {
   min-width: 20px;
   min-height: 20px;
   margin: 22px auto;
+  position: relative;
 }
-
+.search{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+}
+.favourites{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+}
+.favourites-add{
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color:#7DB54F;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color:#FFFFFF;
+  position: absolute;
+  bottom: 11px;
+  left:10px;
+               }
 .icon-menu-item-button {
   margin-top: 14px;
   margin-bottom: 14px;
@@ -217,7 +248,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   margin: 0;
-
+  text-transform: uppercase;
 }
 
 .advantages-list-item {
@@ -225,7 +256,7 @@ body {
   width: 1200px;
   display: flex;
   grid-column: 1/-1; //сетка грид
-}
+  }
 
 
 .advantages-list-item-light {
@@ -261,7 +292,21 @@ body {
   width: 400px;
   padding-top: 81px;
 }
-
+.house-background{
+  background-image: url("../images/main/house.svg");
+  background-repeat: no-repeat;
+ background-position: top;
+}
+.food-background{
+  background-image: url("../images/main/food.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.present-background{
+  background-image: url("../images/main/present.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
 .recommendations-list-item p {
   padding: 30px 85px 81px 85px;
 }
