@@ -339,6 +339,7 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   border: none;
+  cursor:pointer;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -411,6 +412,7 @@ body {
   text-transform: uppercase;
   background: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .button-apply {
@@ -423,7 +425,8 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
-}
+  cursor: pointer;
+  }
 
 .catalog-filter-title {
   font-size: 20px;
@@ -555,8 +558,9 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
-}
+ }
 
 .hotel-card span {
   display: block;
