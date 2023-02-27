@@ -606,17 +606,16 @@ body {
   box-sizing: border-box;
   text-align: center;
   padding: 17px;
-      }
+        }
 
-/*
+
 .table-view {
-  box-sizing: border-box;
-  width: 16px;
+   width: 16px;
   height: 14px;
   background-image: url("../images/catalog/view1.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
+ }
 
 .card-view {
   width: 16px;
@@ -637,7 +636,7 @@ body {
 .table-view:hover,
 .card-view:hover,
 .list-view:hover {}
-*/
+
 .result-select-views {
   display: flex;
   width: inherit;
