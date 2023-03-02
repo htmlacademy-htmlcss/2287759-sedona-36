@@ -91,8 +91,21 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #000000;
+  position: relative;
+}
 
- }
+
+.link-current::after{
+  position: absolute;
+  width: 68px;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  margin-top: 48px;
+ left: 0px;
+
+
+}
 
 .icon-menu {
   display: flex;
