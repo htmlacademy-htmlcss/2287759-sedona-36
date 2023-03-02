@@ -756,21 +756,49 @@ opacity:30%;
   cursor: pointer;
   border-radius: 4px;
 }
-
+.favorite-in{
+  background-color: #7DB54F;
+}
+.favorite-in:hover{
+  background-color: #6C9E42;
+}
+.favorite-in:active{
+  background-color: #7DB54F;
+  }
 .hotel-card span {
   display: block;
 }
 
 .type-price,
 .hotel-button,
-.stars {
+.rating-stars {
   display: flex;
   justify-content: space-between;
   width: 300px;
   margin-top: 16px;
+  }
+  .rating-stars{
+    align-items: center;
+  }
+.stars{
+  display: flex;
+ justify-content: flex-start;
+ width: 140px;
+ box-sizing: border-box;
 }
-
-
+.star-1{
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/catalog/star.svg");
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 6px;
+  margin-left: 0;
+}
+.rating{
+    width: 140px;
+    text-align: center;
+}
 .pagination {
   width: inherit;
   display: flex;
