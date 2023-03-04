@@ -628,23 +628,30 @@ opacity:30%;
 
 .select-control {
   width: 292px;
-  box-sizing: border-box;
+  appearance: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   padding-left: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 40px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url("../images/catalog/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .select-control:hover {
   border: 2px solid #68A2CA;
   border-radius: 4px;
 }
-
+.select-control:focus {
+  border: 2px solid #3F5E72;
+  border-radius: 4px;
+}
 
 .views {
   width: 160px;
