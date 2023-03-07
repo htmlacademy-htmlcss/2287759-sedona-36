@@ -1154,10 +1154,22 @@ body {
   line-height: 24px;
   box-sizing: border-box;
   padding-left: 20px;
+
+  }
+
+  .arrival::after, .departure::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/modal/calendar.svg");
+    position: absolute;
+    right: 20px;
+    top:14px;
   }
 
 .arrival {
   padding-right: 10px;
+
 }
 
 .departure {
@@ -1204,5 +1216,5 @@ body {
 .modal-rows {
   display: block;
   width: 577px;
-  margin-bottom: 48px;
-  }
+  margin-bottom: 48px;position: relative;
+}
