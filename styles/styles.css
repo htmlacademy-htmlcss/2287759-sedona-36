@@ -581,6 +581,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-item:hover {
@@ -591,14 +592,14 @@ body {
   opacity: 30%;
 }
 
-.range {
+.range-price {
   width: 288px;
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
 }
 
-.range ::placeholder {
+.range-price ::placeholder {
   text-align: right;
   font-size: 18px;
   line-height: 24px;
@@ -626,6 +627,7 @@ body {
   background-color: #F2F2F2;
 }
 
+
 .buttons {
   display: grid;
   gap: 32px;
@@ -638,6 +640,50 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }*/
+
+.range-line {
+  width: 288px;
+  height: 4px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  margin-top: 44px;
+  position: absolute;
+}
+
+.range-current {
+  width: 226px;
+  height: 4px;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-top: 44px;
+}
+
+.range-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.range-button:active {
+  border: 2px solid #83B3D3;
+}
+
+.button-min {
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+.button-max {
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+
+
 .button-reset {
   font-size: 16px;
   line-height: 20px;
