@@ -483,7 +483,8 @@ body {
 .subscription-button:hover,
 .button-apply:hover,
 .button-favorite:hover,
-.pagination-link:hover {
+.pagination-link:hover,
+.hotels-search-button:hover {
   background-color: #68A2CA;
 }
 
@@ -614,11 +615,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .control-input[type="radio"]:checked + .control-style-radio {
   background-image: url("../images/catalog/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -639,7 +642,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
- }
+}
 
 .range-price ::placeholder {
   text-align: right;
@@ -1089,3 +1092,117 @@ body {
 .made-in:active {
   color: #7561574D;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+  display: flex;
+  //display: none;
+}
+
+.modal-content {
+  margin: auto;
+  background-color: #FFFFFF;
+  position: relative;
+  width: 577px;
+  padding: 64px 70px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 30px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 64px;
+  right: 62px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.modal-content h2 {
+  margin: 0;
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.modal-content label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.arrival-date,
+.departure-date {
+  width: 440px;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  }
+
+.arrival {
+  padding-right: 10px;
+}
+
+.departure {
+  padding-right: 10px;
+}
+
+.adults-input,
+.children-input {
+  width: 31px;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.adults {
+  display: block;
+  width: 247px;
+}
+
+.children {
+  display: block;
+  width: 242px;
+}
+
+.adults-children {
+  display: flex;
+  justify-content: space-between;
+}
+.less-button, .more-button{
+  width: 40px;
+  background-color: #F2F2F2;
+  border: none;
+}
+.hotels-search-button {
+  width: 577px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  cursor: pointer;
+}
+
+.modal-rows {
+  display: block;
+  width: 577px;
+  margin-bottom: 48px;
+  }
