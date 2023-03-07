@@ -628,18 +628,7 @@ body {
 }
 
 
-.buttons {
-  display: grid;
-  gap: 32px;
-  width: 191px;
-  margin-top: 56px;
-}
 
-/*.buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}*/
 
 .range-line {
   width: 288px;
@@ -683,6 +672,14 @@ body {
   top: -8px;
 }
 
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 191px;
+  margin-top: 56px;
+}
 
 .button-reset {
   font-size: 16px;
