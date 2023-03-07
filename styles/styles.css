@@ -573,10 +573,52 @@ body {
   padding-bottom: 70px;
 }
 
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .catalog-filter-list {
   margin-top: 32px;
 }
 
+.control {
+  position: relative;
+}
+
+.control-name {
+  margin-left: 35px;
+}
+
+.control-style {
+  width: 20px;
+  height: 19px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.control-style-radio {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.control-input[type="checkbox"]:checked + .control-style {
+  background-image: url("../images/catalog/chekbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control-input[type="radio"]:checked + .control-style-radio {
+  background-image: url("../images/catalog/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
