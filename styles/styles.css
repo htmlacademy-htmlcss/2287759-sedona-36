@@ -639,7 +639,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-}
+ }
 
 .range-price ::placeholder {
   text-align: right;
@@ -661,12 +661,18 @@ body {
   border-radius: 4px 0px 0px 4px;
   border: none;
   background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .price-field-max {
   border-radius: 0px 4px 4px 0px;
   border: none;
   background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 
