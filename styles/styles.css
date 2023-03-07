@@ -65,7 +65,7 @@ body {
 }
 
 .menu {
-    width: 892px;
+  width: 892px;
   display: flex;
   justify-content: space-between;
   margin-left: 238px;
@@ -571,7 +571,16 @@ body {
   padding-right: 70px;
   flex-wrap: wrap;
   padding-bottom: 70px;
+}
 
+.catalog-filter-list {
+  margin-top: 32px;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
 }
 
 .catalog-filter-item:hover {
@@ -582,13 +591,53 @@ body {
   opacity: 30%;
 }
 
-.buttons {
+.range {
+  width: 288px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-
+  margin-top: 32px;
 }
 
+.range ::placeholder {
+  text-align: right;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.price-field-min,
+.price-field-max {
+  margin: 0;
+  padding: 0;
+  width: 143px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.price-field-min {
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.price-field-max {
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.buttons {
+  display: grid;
+  gap: 32px;
+  width: 191px;
+  margin-top: 56px;
+}
+
+/*.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}*/
 .button-reset {
   font-size: 16px;
   line-height: 20px;
@@ -598,6 +647,8 @@ body {
   background: inherit;
   border: none;
   cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button-reset:hover {
@@ -614,11 +665,13 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 8px 50px;
   background-color: #82B3D3;
+  box-sizing: border-box;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .catalog-filter-title {
