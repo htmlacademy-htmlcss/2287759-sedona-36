@@ -1124,8 +1124,19 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: #F2F2F2;
   border: none;
+  background-image: url("../images/modal/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.modal-close:active {
+  opacity: 30%;
 }
 
 .modal-content h2 {
@@ -1155,17 +1166,18 @@ body {
   box-sizing: border-box;
   padding-left: 20px;
 
-  }
+}
 
-  .arrival::after, .departure::after{
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/modal/calendar.svg");
-    position: absolute;
-    right: 20px;
-    top:14px;
-  }
+.arrival::after,
+.departure::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/modal/calendar.svg");
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
 
 .arrival {
   padding-right: 10px;
@@ -1181,27 +1193,94 @@ body {
   width: 31px;
   background-color: #F2F2F2;
   border: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+
 }
 
 .adults {
-  display: block;
   width: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .children {
-  display: block;
   width: 242px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
+
+.info {
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/modal/info.svg");
+  background-position: center;
+  margin-right: 46px;
+}
+
+.explanation {
+  margin: 0;
+  padding: 0;
+  width: 216px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #333333;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  border-radius: 10px;
+  position: absolute;
+  top: 48px;
+  right: 42px;
+}
+
+.info::after {
+  content: "";
+  width: 19px;
+  border: 19px solid transparent;
+  border-bottom: 19px solid  #333333;
+  }
 
 .adults-children {
   display: flex;
   justify-content: space-between;
 }
-.less-button, .more-button{
+
+.less-button,
+.more-button {
   width: 40px;
+  height: 40px;
   background-color: #F2F2F2;
   border: none;
 }
+
+.less-button {
+  background-image: url("../images/modal/less.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.more-button {
+  background-image: url("../images/modal/more.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.buttons-control {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .hotels-search-button {
   width: 577px;
   background-color: #83B3D3;
@@ -1211,10 +1290,14 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .modal-rows {
   display: block;
-  width: 577px;
-  margin-bottom: 48px;position: relative;
+  margin-bottom: 48px;
+  position: relative;
 }

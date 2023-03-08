@@ -179,21 +179,26 @@
         <h2 class="titles">Поиск гостиницы в Седоне</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-rows"> <span class="arrival">Дата Заезда:</span> <input class="arrival-date"
-              type="text"></label>
+              type="text" name="arrival"></label>
           <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date"
-              type="text"></label>
+              type="text" name="departure"></label>
 
           <div class="modal-rows">
             <div class="adults-children">
               <label class="adults">Взрослые:
-                <button class="less-button" type="button"></button>
-                <input class="adults-input" type="number">
-                <button class="more-button" type="button"></button>
+                <div class="buttons-control">
+                  <button class="less-button" type="button"></button>
+                  <input class="adults-input" type="number" name="adults">
+                  <button class="more-button" type="button"></button>
+                </div>
               </label>
               <label class="children">Дети:
-                <button class="less-button" type="button"></button>
-                <input class="children-input" type="number">
-                <button class="more-button" type="button"></button>
+                <span class="info"></span>
+                <p class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                <div class="buttons-control"> <button class="less-button" type="button"></button>
+                  <input class="children-input" type="number" name="children">
+                  <button class="more-button" type="button"></button>
+                </div>
               </label>
             </div>
           </div>
