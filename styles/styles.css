@@ -1222,7 +1222,9 @@ body {
   margin-right: 46px;
 }
 
-
+.info:hover + .explanation {
+  display: block;
+}
 
 .explanation {
   margin: 0;
@@ -1244,16 +1246,15 @@ body {
   display: none;
 }
 
-.info::after {
+.explanation::before {
   content: "";
   width: 19px;
   height: 9px;
   background-image: url("../images/modal/tooltip-arrow.svg");
   position: absolute;
-  bottom: -8px;
- left: 57px;
- display: none;
-   }
+  top: -8px;
+  left: 115px;
+}
 
 .adults-children {
   display: flex;
