@@ -1222,6 +1222,8 @@ body {
   margin-right: 46px;
 }
 
+
+
 .explanation {
   margin: 0;
   padding: 0;
@@ -1239,14 +1241,19 @@ body {
   position: absolute;
   top: 48px;
   right: 42px;
+  display: none;
 }
 
 .info::after {
   content: "";
   width: 19px;
-  border: 19px solid transparent;
-  border-bottom: 19px solid  #333333;
-  }
+  height: 9px;
+  background-image: url("../images/modal/tooltip-arrow.svg");
+  position: absolute;
+  bottom: -8px;
+ left: 57px;
+ display: none;
+   }
 
 .adults-children {
   display: flex;
