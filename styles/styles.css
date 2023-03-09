@@ -132,7 +132,7 @@ body {
 .icon-menu-item {
   min-width: 20px;
   min-height: 20px;
-  padding: 22px auto;
+  padding: 20px 12px;
   position: relative;
 }
 
@@ -151,8 +151,9 @@ body {
   border-radius: 50%;
   color: #FFFFFF;
   position: absolute;
-  bottom: 11px;
-  left: 10px;
+bottom: 35px;
+left: 20px;
+
 }
 
 .icon-menu-item-button {
@@ -238,8 +239,12 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-}
+  margin-top: 22px;
+  }
 
+.design-pixel{
+  padding-top: 5px;
+}
 .advantages {
   margin-top: 69px;
 }
@@ -256,7 +261,7 @@ body {
   text-align: center;
   width: 1200px;
   grid-template-columns: 400px 400px 400px;
-  margin-top: 69px;
+  margin-top: 90px;
 }
 
 .advantages-list-item img {
@@ -281,18 +286,26 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin: 0;
+  margin: 0 auto;
+  width: 175px;
   text-transform: uppercase;
 }
-
-.advantages-recommendations-title::after {
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 auto;
+  width: 175px;
+  text-transform: uppercase;
+}
+.advantages-title::after {
   display: block;
   width: 60px;
   height: 2px;
   content: "";
   border-bottom: 2px solid #FFFFFF4D;
-  margin-top: 30px;
-  margin-left: 170px;
+  margin: 30px auto;
+
 }
 
 .decor-line::after {
@@ -301,8 +314,8 @@ body {
   height: 2px;
   content: "";
   border-bottom: 2px solid #0000004D;
-  margin-top: 30px;
-  margin-left: 170px;
+  margin: 30px auto;
+
 }
 
 .advantages-list-item {
@@ -346,16 +359,20 @@ body {
   width: 400px;
   padding-top: 81px;
 }
-
+.recommendations-descriptions{
+  width: 230px;
+    padding-top: 30px;
+ padding-bottom: 81px;
+  text-align: center;
+}
 .house::before {
   content: "";
   display: block;
   background-image: url("../images/main/house.svg");
   width: 75px;
   height: 72px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 0;
-  margin-left: 164px;
 }
 
 .food::before {
@@ -364,10 +381,9 @@ body {
   background-image: url("../images/main/food.svg");
   width: 74px;
   height: 70px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 0;
-  margin-left: 164px;
-}
+  }
 
 .present::before {
   content: "";
@@ -376,14 +392,13 @@ body {
   background-repeat: no-repeat;
   width: 64px;
   height: 76px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 0;
-  margin-left: 164px;
-}
+ }
 
-.recommendations-list-item p {
+/*.recommendations-list-item p {
   padding: 30px 85px 81px 85px;
-}
+}*/
 
 .to-book {
   margin: 96px 304px;
@@ -398,12 +413,14 @@ body {
   text-align: center;
   display: block;
   width: 376px;
-  margin: 54px auto;
-  padding: 8px 50px;
+ margin: 54px auto;
   background-color: #756157;
   border-radius: 4px;
 }
-
+.button-search{
+padding-top: 8px;
+padding-bottom: 8px;
+}
 .subscription {
   background-image: url("../images/main/subscribe.jpg");
   background-repeat: no-repeat;
@@ -468,8 +485,8 @@ body {
 }
 
 .subscription-button {
-  width: 232px;
-  font-weight: 700;
+    width: 232px;
+    font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
@@ -478,6 +495,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 0px 4px 4px 0px;
+  padding: 8px 50px;
 }
 
 .subscription-button:hover,
@@ -1024,9 +1042,7 @@ body {
 .footer-page {
   width: 1060px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  display: flex;
+   display: flex;
   justify-content: space-between;
 }
 
@@ -1035,7 +1051,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
+margin-top: 45px;
 }
 
 .socials-list-item {
@@ -1070,7 +1086,9 @@ body {
   color: #000000;
   width: 720px;
   text-align: center;
-}
+  margin-top: 45px;
+  margin-bottom: 35px;
+  }
 
 .phone-number:hover {
   color: #756157;
@@ -1083,7 +1101,8 @@ body {
 .made-in {
   width: 115px;
   color: #000000;
-}
+  margin-top: 48px;
+ }
 
 .made-in:hover {
   color: #756157;
@@ -1101,7 +1120,7 @@ body {
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
   display: flex;
-  //display: none;
+  display: none;
 }
 
 .modal-content {
@@ -1178,12 +1197,14 @@ body {
   top: 14px;
 }
 
-.arrival, .departure {
+.arrival,
+.departure {
   padding-right: 10px;
 }
 
 
-.date-error, .date-approved{
+.date-error,
+.date-approved {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1191,15 +1212,18 @@ body {
 
 
 }
-.date-error{
-top:216px;
-left: 227px;
-color: #FF5757;
+
+.date-error {
+  top: 216px;
+  left: 227px;
+  color: #FF5757;
 }
-.date-approved{
+
+.date-approved {
   top: 312px;
   left: 227px;
 }
+
 .adults-input,
 .children-input {
   width: 31px;
