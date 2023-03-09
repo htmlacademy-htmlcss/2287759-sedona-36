@@ -1165,7 +1165,6 @@ body {
   line-height: 24px;
   box-sizing: border-box;
   padding-left: 20px;
-
 }
 
 .arrival::after,
@@ -1179,15 +1178,28 @@ body {
   top: 14px;
 }
 
-.arrival {
-  padding-right: 10px;
-
-}
-
-.departure {
+.arrival, .departure {
   padding-right: 10px;
 }
 
+
+.date-error, .date-approved{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  position: absolute;
+
+
+}
+.date-error{
+top:216px;
+left: 227px;
+color: #FF5757;
+}
+.date-approved{
+  top: 312px;
+  left: 227px;
+}
 .adults-input,
 .children-input {
   width: 31px;
@@ -1259,34 +1271,36 @@ body {
 .adults-children {
   display: flex;
   justify-content: space-between;
+  width: 577px;
 }
 
 .less-button,
 .more-button {
-  width: 40px;
-  height: 40px;
-  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
   border: none;
+  cursor: pointer;
+  color: #7561574D;
+  margin: 14px 10px;
 }
 
-.less-button {
-  background-image: url("../images/modal/less.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px 0px 0px 4px;
+.less-button:hover,
+.more-button:hover {
+  color: #000000;
 }
 
-.more-button {
-  background-image: url("../images/modal/more.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0px 4px 4px 0px;
+.less-button:active,
+.more-button:active {
+  color: #7561574D;
 }
 
 .buttons-control {
   width: 111px;
   display: flex;
-  justify-content: space-between;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .hotels-search-button {
@@ -1305,7 +1319,9 @@ body {
 }
 
 .modal-rows {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 48px;
   position: relative;
 }

@@ -178,26 +178,46 @@
         </button>
         <h2 class="titles">Поиск гостиницы в Седоне</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <label class="modal-rows"> <span class="arrival">Дата Заезда:</span> <input class="arrival-date"
-              type="text" name="arrival"></label>
-          <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date"
-              type="text" name="departure"></label>
-
+          <label class="modal-rows"> <span class="arrival">Дата Заезда:</span> <input class="arrival-date" type="text"
+              name="arrival"></label>
+          <span class="date-error">Мы не можем отправить вас в прошлое.</span>
+          <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date" type="text"
+              name="departure"></label>
+          <span class="date-approved">На эти даты есть свободные номера. Пока есть.</span>
           <div class="modal-rows">
             <div class="adults-children">
               <label class="adults">Взрослые:
                 <div class="buttons-control">
-                  <button class="less-button" type="button"></button>
+                  <button class="less-button" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
+                  </button>
                   <input class="adults-input" type="number" name="adults">
-                  <button class="more-button" type="button"></button>
+                  <button class="more-button" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
+                    </svg>
+                  </button>
                 </div>
               </label>
+
               <label class="children">Дети:
                 <span class="info"></span>
-                <p class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                <div class="buttons-control"> <button class="less-button" type="button"></button>
+                <p class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</p>
+                <div class="buttons-control">
+                  <button class="less-button" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
+                  </button>
                   <input class="children-input" type="number" name="children">
-                  <button class="more-button" type="button"></button>
+                  <button class="more-button" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
+                    </svg>
+                  </button>
                 </div>
               </label>
             </div>
