@@ -1135,7 +1135,7 @@ margin-top: 45px;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
   display: flex;
-  display: none;
+ // display: none;
 }
 
 .modal-content {
@@ -1247,30 +1247,22 @@ margin-top: 45px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-
 }
-
-.adults {
-  width: 247px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.children-label{
+  margin-right: 82px;
+  margin-left: 88px;
 }
-
-.children {
-  width: 242px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+.adults-label{
+  margin-right: 46px;
 }
-
 .info {
   width: 26px;
   height: 26px;
   background-image: url("../images/modal/info.svg");
   background-position: center;
   margin-right: 46px;
+  position: absolute;
+left: 394px;
 }
 
 .info:hover + .explanation {
@@ -1309,8 +1301,8 @@ margin-top: 45px;
 
 .adults-children {
   display: flex;
-  justify-content: space-between;
-  width: 577px;
+    width: 577px;
+  align-items: center;
 }
 
 .less-button,
@@ -1338,9 +1330,9 @@ margin-top: 45px;
 .buttons-control {
   width: 111px;
   display: flex;
-  background-color: #F2F2F2;
+    background-color: #F2F2F2;
   border-radius: 4px;
-}
+ }
 
 .hotels-search-button {
   width: 577px;
