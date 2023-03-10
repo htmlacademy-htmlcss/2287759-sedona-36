@@ -186,23 +186,21 @@
           <span class="date-approved">На эти даты есть свободные номера. Пока есть.</span>
           <div class="modal-rows">
             <div class="adults-children">
-              <label class="adults-label" for="adults">Взрослые: </label>
+              <label class="adults-label" for="adults-field">Взрослые: </label>
                 <div class="buttons-control">
                   <button class="less-button" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="adults-input" type="number" name="adults">
+                  <input id="adults-field" class="adults-input" type="number" name="adults">
                   <button class="more-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
                     </svg>
                   </button>
                 </div>
-
-
-              <label class="children-label" for="children">Дети: </label>
+              <label class="children-label" for="children-field">Дети: </label>
                 <span class="info"></span>
                 <span class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                   Дети до 6 лет размещаются бесплатно.</span>
@@ -213,15 +211,13 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="children-input" type="number" name="children">
+                  <input id="children-field" class="children-input" type="number" name="children">
                   <button class="more-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
                     </svg>
                   </button>
                 </div>
-
-
             </div>
           </div>
           <button class="hotels-search-button" type="submit">Найти</button>

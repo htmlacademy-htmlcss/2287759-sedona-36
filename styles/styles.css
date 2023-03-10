@@ -1153,8 +1153,8 @@ margin-top: 45px;
 
 .modal-close {
   position: absolute;
-  top: 64px;
-  right: 62px;
+  top: 66px;
+  right: 54px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1278,15 +1278,15 @@ left: 394px;
   font-weight: 400;
   color: #FFFFFF;
   background-color: #333333;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   padding-left: 22px;
   border-radius: 10px;
   position: absolute;
-  top: 48px;
+  top: 50px;
   right: 42px;
-  display: none;
+ // display: none;
 }
 
 .explanation::before {
