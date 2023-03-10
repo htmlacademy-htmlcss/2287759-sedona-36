@@ -49,8 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
+  }
 
 .header-logo {
   margin-left: 70px;
@@ -392,7 +391,7 @@ left: 20px;
   background-repeat: no-repeat;
   width: 64px;
   height: 76px;
-  margin: 0 auto;
+  margin: -3px auto;
   margin-bottom: 30px;
  }
 
@@ -487,6 +486,7 @@ padding-bottom: 8px;
 }
 
 .subscription-button {
+  font: inherit;
     width: 232px;
     font-weight: 700;
   font-size: 20px;
@@ -594,7 +594,11 @@ padding-bottom: 8px;
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
-
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
 .catalog-filter-group {
   margin: 0;
   width: 150px;
@@ -760,6 +764,7 @@ padding-bottom: 8px;
 }
 
 .button-reset {
+  font: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -769,7 +774,7 @@ padding-bottom: 8px;
   border: none;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+   padding-bottom: 8px;
   margin-top: 32px;
 }
 
@@ -782,6 +787,7 @@ padding-bottom: 8px;
 }
 
 .button-apply {
+ font: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -795,7 +801,7 @@ padding-bottom: 8px;
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
-}
+  }
 
 .catalog-filter-title {
   font-size: 20px;
@@ -955,6 +961,7 @@ padding-top: 10px;
 }
 
 .button-favorite {
+  font: inherit;
   width: 140px;
   font-size: 16px;
   line-height: 20px;
@@ -1135,7 +1142,7 @@ margin-top: 45px;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
   display: flex;
- // display: none;
+  display: none;
 }
 
 .modal-content {
@@ -1286,7 +1293,7 @@ left: 394px;
   position: absolute;
   top: 50px;
   right: 42px;
- // display: none;
+ display: none;
 }
 
 .explanation::before {
