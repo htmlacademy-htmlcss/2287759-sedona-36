@@ -484,16 +484,19 @@ body {
 }
 
 .subscription {
+  min-height: 415px;
   background-image: url("../images/main/subscribe-image.jpg");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-size: cover;
   margin-top: 96px;
-  padding: 94px 258px 104px 258px;
   text-align: center;
   background-color: #000000;
 }
-
+.subscription-form{
+  margin: 54px auto;
+}
 .subscription h2 {
+  padding-top: 96px;
   color: #FFFFFF;
 }
 
