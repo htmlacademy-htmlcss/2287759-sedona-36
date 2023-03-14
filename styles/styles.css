@@ -1320,11 +1320,12 @@ background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- display: none;
-}
+ //display: none;
+ }
 
 .modal-content {
-  margin: auto;
+margin: auto;
+margin-top: 396px;
   background-color: #FFFFFF;
   position: relative;
   width: 577px;
@@ -1425,6 +1426,7 @@ background-color: #000000;
 .date-approved {
   top: 312px;
   left: 227px;
+  display: none;
 }
 
 .adults-input,
