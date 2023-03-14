@@ -47,7 +47,7 @@
 
 html {
   height: 100%;
-}
+  }
 
 .shadow {
   margin: 0 auto;
@@ -254,6 +254,7 @@ body {
 .hero {
   background-image: url("../images/main/index-background.jpg");
   background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 .hero::after {
@@ -489,6 +490,7 @@ body {
   margin-top: 96px;
   padding: 94px 258px 104px 258px;
   text-align: center;
+  background-color: #000000;
 }
 
 .subscription h2 {
@@ -612,8 +614,9 @@ border-color: #000000;
 .catalog-hotels-background {
   background-image: url("../images/catalog/filter.jpg");
   background-repeat: no-repeat;
-}
-
+background-color: #000000;
+  min-height: 412px;
+              }
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,11 +666,11 @@ border-color: #000000;
   width: inherit;
   margin: 0;
   color: #FFFFFF;
-}
+   }
 
 .catalog-filter {
   width: 1060px;
-  display: -webkit-box;
+   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
@@ -675,8 +678,8 @@ border-color: #000000;
   padding-right: 70px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 70px;
-}
+  padding-bottom: 57px;
+     }
 
 .catalog-filter-title {
   font-size: 20px;
@@ -701,7 +704,7 @@ border-color: #000000;
 
 .catalog-filter-list {
   margin-top: 32px;
-}
+    }
 
 .control {
   position: relative;
@@ -939,7 +942,7 @@ border-color: #000000;
   display: -ms-flexbox;
   display: flex;
   width: 1060px;
-  margin-top: 37px;
+  margin-top: 50px;
 }
 
 .quantity {
@@ -1000,6 +1003,8 @@ border-color: #000000;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .views li {
@@ -1223,7 +1228,7 @@ border-color: #000000;
 .footer-page {
   width: 1060px;
   margin: 0 auto;
-   display: -webkit-box;
+     display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1241,7 +1246,7 @@ border-color: #000000;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .socials-list-item {
@@ -1276,7 +1281,7 @@ border-color: #000000;
   color: #000000;
   width: 720px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 35px;
 }
 
@@ -1291,7 +1296,7 @@ border-color: #000000;
 .made-in {
   width: 115px;
   color: #000000;
-  margin-top: 48px;
+  margin-top: 43px;
 }
 
 .made-in:hover {
