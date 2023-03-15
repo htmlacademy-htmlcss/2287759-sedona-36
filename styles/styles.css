@@ -484,16 +484,20 @@ body {
 }
 
 .subscription {
+  min-height: 415px;
   background-image: url("../images/main/subscribe-image.jpg");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-size: cover;
   margin-top: 96px;
-  padding: 94px 258px 104px 258px;
   text-align: center;
   background-color: #000000;
 }
-
+.subscription-form{
+  padding-bottom: 104px;
+  margin-left: 258px;
+}
 .subscription h2 {
+  padding-top: 96px;
   color: #FFFFFF;
 }
 
@@ -1318,7 +1322,7 @@ background-color: #000000;
   display: -ms-flexbox;
   display: flex;
  display: none;
-}
+ }
 
 .modal-content {
   margin: auto;
@@ -1377,6 +1381,7 @@ background-color: #000000;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+  font:inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1416,12 +1421,13 @@ background-color: #000000;
   top: 216px;
   left: 227px;
   color: #FF5757;
-  display: none;
+ // display: none;
 }
 
 .date-approved {
   top: 312px;
   left: 227px;
+  //display: none;
 }
 
 .adults-input,
@@ -1432,7 +1438,8 @@ background-color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-}
+  text-align: center;
+  }
 
 .children-label {
   margin-right: 82px;
@@ -1453,9 +1460,9 @@ background-color: #000000;
   left: 394px;
 }
 
-.info:hover + .explanation {
+/*.info:hover + .explanation {
   display: block;
-}
+}*/
 
 .explanation {
   margin: 0;
@@ -1474,7 +1481,7 @@ background-color: #000000;
   position: absolute;
   top: 50px;
   right: 42px;
-  display: none;
+  //display: none;
 }
 
 .explanation::before {

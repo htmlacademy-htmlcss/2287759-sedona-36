@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -127,7 +128,7 @@
         <section class="subscription">
           <h2 class="titles">Подпишитесь на рассылку</h2>
           <p class="titles-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="email-field" type="email" placeholder="Ваш e-mail" name="e-mail" required>
             <input class="subscription-button" type="submit" value="Подписаться">
           </form>
@@ -182,10 +183,10 @@
           <h2 class="titles">Поиск гостиницы в Седоне</h2>
           <form action="https://echo.htmlacademy.ru/" method="get">
             <label class="modal-rows"> <span class="arrival">Дата Заезда:</span> <input class="arrival-date" type="text"
-                name="arrival"></label>
+                name="arrival" value="27 апреля 2020"></label>
             <span class="date-error">Мы не можем отправить вас в прошлое.</span>
             <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date"
-                type="text" name="departure"></label>
+                type="text" name="departure" value="1 сентября 2023"></label>
             <span class="date-approved">На эти даты есть свободные номера. Пока есть.</span>
             <div class="modal-rows">
               <div class="adults-children">
@@ -196,7 +197,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input id="adults-field" class="adults-input" type="number" name="adults">
+                  <input id="adults-field" class="adults-input" type="number" name="adults" value="2">
                   <button class="more-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
@@ -215,7 +216,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input id="children-field" class="children-input" type="number" name="children">
+                  <input id="children-field" class="children-input" type="number" name="children" value="2">
                   <button class="more-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
