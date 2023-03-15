@@ -596,6 +596,7 @@ border-color: #000000;
 
 .container-inner {
   margin: 0 auto;
+  width: 1060px;
 }
 
 .inner-header {
@@ -695,7 +696,7 @@ background-color: #000000;
   margin-right: 67px;
   padding: 0;
   border: none;
-}
+  }
 
 .range-price-filter {
   border: none;
@@ -723,8 +724,10 @@ background-color: #000000;
   border-radius: 4px;
   position: absolute;
   left: 0;
+ }
+.control-input:focus + .control-style{
+  border: 3px solid #83B3D3;
 }
-
 .control-style-radio {
   width: 20px;
   height: 20px;
@@ -732,6 +735,9 @@ background-color: #000000;
   border-radius: 50%;
   position: absolute;
   left: 0;
+}
+.control-input:focus + .control-style-radio{
+  border: 3px solid #83B3D3;
 }
 
 .control-input[type="checkbox"]:checked + .control-style {
