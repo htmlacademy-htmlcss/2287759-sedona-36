@@ -1320,7 +1320,7 @@ background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- //display: none;
+ display: none;
  }
 
 .modal-content {
