@@ -1460,9 +1460,9 @@ background-color: #000000;
   left: 394px;
 }
 
-.info:hover + .explanation {
+/*.info:hover + .explanation {
   display: block;
-}
+}*/
 
 .explanation {
   margin: 0;
@@ -1481,7 +1481,7 @@ background-color: #000000;
   position: absolute;
   top: 50px;
   right: 42px;
-  display: none;
+  //display: none;
 }
 
 .explanation::before {
