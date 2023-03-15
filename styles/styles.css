@@ -493,7 +493,8 @@ body {
   background-color: #000000;
 }
 .subscription-form{
-  margin: 54px auto;
+  padding-bottom: 104px;
+  margin-left: 258px;
 }
 .subscription h2 {
   padding-top: 96px;
