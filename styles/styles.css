@@ -527,7 +527,7 @@ body {
 .subscription form {
   margin-top: 54px;
   width: 684px;
-  display: -webkit-box;
+   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -575,7 +575,7 @@ border-color: #000000;
   border: none;
   cursor: pointer;
   border-radius: 0px 4px 4px 0px;
-  padding: 8px 50px;
+
 }
 
 .subscription-button:hover,
@@ -1190,7 +1190,14 @@ background-color: #000000;
   padding-bottom: 9px;
   border-radius: 4px;
 }
-
+.pagination::before{
+  width: 1060px;
+  content: "";
+  height: 1px;
+  background-color: #E6E6E6;
+ position: absolute;
+ bottom: 100px;
+}
 .pagination {
   width: inherit;
   display: -webkit-box;
@@ -1199,6 +1206,7 @@ background-color: #000000;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+          position: relative;
 }
 
 .pagination-item:not(:first-child) {
@@ -1232,7 +1240,11 @@ background-color: #000000;
   color: #000;
   margin-right: 8px;
 }
-
+.pagination-current:hover{
+  background-color: #FFFFFF;
+  color: #000;
+  margin-right: 8px;
+}
 .footer-page {
   width: 1060px;
   margin: 0 auto;
