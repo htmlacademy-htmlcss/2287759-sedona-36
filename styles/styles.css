@@ -1388,7 +1388,7 @@ background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- display: none;
+// display: none;
  }
 
 .modal-content {
@@ -1442,7 +1442,7 @@ background-color: #000000;
 
 .arrival-date,
 .departure-date {
-  width: 440px;
+  min-width: 440px;
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1457,7 +1457,7 @@ background-color: #000000;
           box-sizing: border-box;
   padding-left: 20px;
   padding-right: 38px;
-}
+  }
 
 .arrival::after,
 .departure::after {
@@ -1466,7 +1466,7 @@ background-color: #000000;
   height: 20px;
   background-image: url("../images/modal/calendar.svg");
   position: absolute;
-  right: 20px;
+ right: 20px;
   top: 14px;
 }
 
@@ -1481,21 +1481,21 @@ background-color: #000000;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  position: absolute;
+  display: block;
+  margin-top: 4px;
+ margin-left: 157px;
+ margin-bottom: 23px;
 
 
 }
 
 .date-error {
-  top: 216px;
-  left: 227px;
+
   color: #FF5757;
  // display: none;
 }
 
 .date-approved {
-  top: 312px;
-  left: 227px;
   //display: none;
 }
 
@@ -1571,6 +1571,7 @@ background-color: #000000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          margin-bottom: 48px;
 }
 
 .less-button,
@@ -1618,7 +1619,10 @@ background-color: #000000;
   line-height: 24px;
   text-transform: uppercase;
 }
-
+.hotels-search-button:disabled{
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
 .modal-rows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,6 +1633,6 @@ background-color: #000000;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 48px;
-  position: relative;
+
+ position: relative;
 }
