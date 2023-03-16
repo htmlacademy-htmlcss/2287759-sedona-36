@@ -1167,7 +1167,9 @@ background-color: #000000;
 .hotel-card span {
   display: block;
 }
-
+.button-favorite:disabled{
+  background-color:#E5E5E5 ;
+}
 .type-price,
 .hotel-button,
 .rating-stars {
