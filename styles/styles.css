@@ -521,7 +521,7 @@ body {
   margin-top: 54px;
 }
 .subscription-inner {
-  margin-top: 156px;
+  margin-top: 153px;
   text-align: center;
 }
 .subscription-inner h2{
@@ -543,9 +543,9 @@ body {
 
 .subscription-inner form {
   margin-top: 54px;
+  margin-bottom: 5px;
   margin-left: 258px;
-  margin-bottom: 106px;
-  width: 684px;
+   width: 684px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
