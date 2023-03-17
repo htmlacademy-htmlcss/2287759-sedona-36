@@ -305,12 +305,14 @@
         </section>
 
         <section class="subscription-inner">
-          <h2 class="titles">Подпишитесь на рассылку</h2>
-          <p class="titles-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-field" type="email" placeholder="Ваш e-mail" required>
-            <input class="subscription-button" type="submit" value="Подписаться">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="e-mail"><h2 class="titles">Подпишитесь на рассылку</h2>
+              <span>Только полезная информация и никакого спама,<br>честное бойскаутское!</span></label>
+           <div class="subscription-inputs"> <input class="email-field" id="e-mail" type="email" placeholder="Ваш e-mail" name="e-mail" required>
+           <input class="subscription-button" type="submit" value="Подписаться">
+          </div>
           </form>
+
         </section>
       </main>
 
