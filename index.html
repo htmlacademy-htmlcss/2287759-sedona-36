@@ -129,8 +129,8 @@
           <h2 class="titles">Подпишитесь на рассылку</h2>
           <p class="titles-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-           <label class="visually-hidden" for="e-mail">Введите адрес электронной почты.</label> <input class="email-field" id="e-mail" type="email" placeholder="Ваш e-mail" name="e-mail" required>
-           <label class="visually-hidden" for="submit">Подписаться.</label> <input class="subscription-button" id="submit" type="submit" value="Подписаться">
+            <input class="email-field" id="e-mail" type="email" placeholder="Ваш e-mail" name="e-mail" required>
+          <input class="subscription-button" id="submit" type="submit" value="Подписаться">
           </form>
         </section>
       </main>
@@ -188,9 +188,9 @@
             <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date"
                 type="text" name="departure" value="1 сентября 2023"></label>
             <span class="date-approved">На эти даты есть свободные номера. Пока есть.</span>
-            <div class="modal-rows">
               <div class="adults-children">
-                <label class="adults-label" for="adults-field">Взрослые: </label>
+<div class="adults-row">
+               <label class="adults-label" for="adults-field">Взрослые: </label>
                 <div class="buttons-control">
                   <button class="less-button" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -204,12 +204,12 @@
                     </svg>
                   </button>
                 </div>
-                <label class="children-label" for="children-field">Дети: </label>
-                <span class="info"></span>
-                <span class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                  лет.
-                  Дети до 6 лет размещаются бесплатно.</span>
+</div>
 
+<div class="children-row">           <label class="children-label" for="children-field">Дети: </label>
+                <span class="info"></span>
+                <span class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</span>
                 <div class="buttons-control">
                   <button class="less-button" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -223,8 +223,10 @@
                     </svg>
                   </button>
                 </div>
-              </div>
-            </div>
+</div>
+                </div>
+
+
             <button class="hotels-search-button" type="submit">Найти</button>
           </form>
         </div>
