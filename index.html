@@ -12,7 +12,7 @@
   <body>
     <div class="shadow">
       <header class="main-header">
-        <img class="header-logo" src="images/header/logo.png" width="140" height="70" alt="Логотип">
+        <img class="header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип.">
         <nav class="menu">
           <ul class="menu-list">
             <li>
@@ -53,7 +53,7 @@
       </header>
       <main class="container">
         <section class="hero">
-          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
+          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           <img class="welcome" src="images/main/group37.svg" width="458" height="352"
             alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой.">
 
@@ -61,8 +61,8 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <h2 class="titles">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-          <p class="titles-description design-pixel">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h2 class="titles-introduce">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p class="titles-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
           <ul class="advantages-list">
             <li class="advantages-list-item">
@@ -71,7 +71,7 @@
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-photo" src="images/main/photo-1.jpg" width="800" height="384"
-                alt="Терасса на фоне гор">
+                alt="Терасса на фоне гор.">
             </li>
             <li class="advantages-list-item-light">
               <h3 class="advantages-title decor-line">Небольшая площадь</h3>
@@ -86,7 +86,7 @@
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-list-item">
-              <img class="advantages-photo" src="images/main/photo-2.jpg" width="800" height="385" alt="Мост Дьявола">
+              <img class="advantages-photo" src="images/main/photo-2.jpg" width="800" height="385" alt="Мост Дьявола.">
               <div class="city-pons-padding">
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -120,17 +120,17 @@
 
         <section class="to-book">
           <h2 class="titles">Заинтересовались?</h2>
-          <p class="titles-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне</p>
+          <p class="titles-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
         <section class="subscription">
-          <h2 class="titles">Подпишитесь на рассылку</h2>
-          <p class="titles-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-field" type="email" placeholder="Ваш e-mail" name="e-mail" required>
-            <input class="subscription-button" type="submit" value="Подписаться">
+            <h2 class="titles">Подпишитесь на рассылку</h2> <span>Только полезная информация и никакого спама,<br>честное бойскаутское!</span>
+            <label class="visually-hidden" for="e-mail"> Введите адрес электронной почты.</label>
+           <div class="subscription-inputs"> <input class="email-field" id="e-mail" type="email" placeholder="Ваш e-mail" name="e-mail" required>
+           <input class="subscription-button" type="submit" value="Подписаться">
+          </div>
           </form>
         </section>
       </main>
@@ -177,20 +177,20 @@
       </footer>
       <div class="modal-container">
         <div class="modal-content">
-          <button class="modal-close">
+          <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <h2 class="titles">Поиск гостиницы в Седоне</h2>
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="modal-rows"> <span class="arrival">Дата Заезда:</span> <input class="arrival-date" type="text"
                 name="arrival" value="27 апреля 2020"></label>
             <span class="date-error">Мы не можем отправить вас в прошлое.</span>
             <label class="modal-rows"><span class="departure">Дата Выезда:</span><input class="departure-date"
                 type="text" name="departure" value="1 сентября 2023"></label>
             <span class="date-approved">На эти даты есть свободные номера. Пока есть.</span>
-            <div class="modal-rows">
               <div class="adults-children">
-                <label class="adults-label" for="adults-field">Взрослые: </label>
+<div class="adults-row">
+               <label class="adults-label" for="adults-field">Взрослые: </label>
                 <div class="buttons-control">
                   <button class="less-button" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -204,12 +204,12 @@
                     </svg>
                   </button>
                 </div>
-                <label class="children-label" for="children-field">Дети: </label>
-                <span class="info"></span>
-                <span class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                  лет.
-                  Дети до 6 лет размещаются бесплатно.</span>
+</div>
 
+<div class="children-row">           <label class="children-label" for="children-field">Дети: </label>
+                <span class="info"></span>
+                <span class="explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</span>
                 <div class="buttons-control">
                   <button class="less-button" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -223,8 +223,10 @@
                     </svg>
                   </button>
                 </div>
-              </div>
-            </div>
+</div>
+                </div>
+
+
             <button class="hotels-search-button" type="submit">Найти</button>
           </form>
         </div>

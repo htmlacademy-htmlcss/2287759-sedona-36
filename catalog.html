@@ -13,7 +13,7 @@
     <div class="shadow">
       <header class="main-header">
         <a href="index.html">
-          <img class="header-logo" src="images/header/logo.png" width="140" height="70" alt="Логотип">
+          <img class="header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип">
         </a>
         <nav class="menu">
           <ul class="menu-list">
@@ -128,8 +128,10 @@
             <fieldset class="range-price-filter">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range-price">
-                <input class="price-field-min" type="number" name="min-price" placeholder="от" value="0">
-                <input class="price-field-max" type="number" name="max-price" placeholder="до" value="9000">
+                <label class="min-price" for="min-price">от</label>
+                <input class="price-field-min" id="min-price" type="number" name="min-price" value="0">
+                <label class="max-price" for="max-price">до</label>
+                <input class="price-field-max" id="max-price" type="number" name="max-price" value="9000">
               </div>
               <div class="range-line"> </div>
               <div class="range-current" style="left:0px; width:226px">
@@ -158,29 +160,18 @@
 
             <ul class="views">
               <li class="views-item">
-                <a href="#">
-                  <span class="visually-hidden">Показать таблицу</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
-                    <path fill="currentColor"
-                      d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-                  </svg>
+                <a class="table-icon" href="#">
+                  <span class="visually-hidden">Показать таблицу.</span>
                 </a>
               </li>
               <li class="views-item">
-                <a href="#">
-                  <span class="visually-hidden">Показать карточку</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
-                    <path fill="currentColor" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-                  </svg>
+                <a class="card-icon" href="#">
+                  <span class="visually-hidden">Показать карточку.</span>
                 </a>
               </li>
               <li class="views-item">
-                <a href="#">
-                  <span class="visually-hidden">Показать список</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
-                    <path fill="currentColor"
-                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-                  </svg>
+                <a class="list-icon" href="#">
+                  <span class="visually-hidden">Показать список.</span>
                 </a>
               </li>
             </ul>
@@ -198,7 +189,7 @@
                 </div>
                 <div class="hotel-button">
                   <a class="hotel-card-button" href="#">Подробнее</a>
-                  <button class="button-favorite">В избранное</button>
+                  <button class="button-favorite" type="button">В избранное</button>
                 </div>
                 <div class="rating-stars">
                   <div class="stars">
@@ -225,7 +216,7 @@
                 </div>
                 <div class="hotel-button">
                   <a class="hotel-card-button" href="#">Подробнее</a>
-                  <button class="button-favorite favorite-in">В избранном</button>
+                  <button class="button-favorite favorite-in" type="button">В избранном</button>
                 </div>
                 <div class="rating-stars">
                   <div class="stars">
@@ -252,7 +243,7 @@
                 </div>
                 <div class="hotel-button">
                   <a class="hotel-card-button" href="#">Подробнее</a>
-                  <button class="button-favorite">В избранное</button>
+                  <button class="button-favorite" type="button">В избранное</button>
                 </div>
                 <div class="rating-stars">
                   <div class="stars">
@@ -277,7 +268,7 @@
                 </div>
                 <div class="hotel-button">
                   <a class="hotel-card-button" href="#">Подробнее</a>
-                  <button class="button-favorite">В избранное</button>
+                  <button class="button-favorite" type="button">В избранное</button>
                 </div>
                 <div class="rating-stars">
                   <div class="stars">
@@ -314,12 +305,16 @@
         </section>
 
         <section class="subscription-inner">
-          <h2 class="titles">Подпишитесь на рассылку</h2>
-          <p class="titles-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-field" type="email" placeholder="Ваш e-mail" required>
-            <input class="subscription-button" type="submit" value="Подписаться">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="titles">Подпишитесь на рассылку</h2>
+            <span>Только полезная информация и никакого спама,<br>честное бойскаутское!</span>
+            <label class="visually-hidden" for="e-mail">Введите адрес электронной почты.</label>
+            <div class="subscription-inputs"> <input class="email-field" id="e-mail" type="email"
+                placeholder="Ваш e-mail" name="e-mail" required>
+              <input class="subscription-button" type="submit" value="Подписаться">
+            </div>
           </form>
+
         </section>
       </main>
 
