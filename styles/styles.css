@@ -784,6 +784,7 @@ background-color: #000000;
   left: 0;
  }
 .control-input:focus + .control-style{
+  box-sizing: border-box;
   border: 3px solid #83B3D3;
 }
 .control-input:disabled +.control-style{
@@ -801,6 +802,7 @@ background-color: #000000;
   left: 0;
 }
 .control-input:focus + .control-style-radio{
+  box-sizing: border-box;
   border: 3px solid #83B3D3;
 }
 
