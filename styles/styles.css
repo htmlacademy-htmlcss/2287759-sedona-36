@@ -176,13 +176,24 @@ body {
 .icon-menu-item {
   min-width: 20px;
   min-height: 20px;
-  padding: 20px 12px;
   position: relative;
 }
 .search{
+  display: block;
   width: 44px;
+  height: 63px;
 }
-
+.search svg{
+padding: 22px 12px;
+}
+.favorites{
+  display: block;
+  width: 44px;
+  height: 63px;
+}
+.favorites svg{
+  padding: 22px 12px;
+  }
 .favorites-add {
   display: block;
   text-align: center;
@@ -1427,7 +1438,7 @@ background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- //display: none;
+ display: none;
  }
 
 .modal-content {
