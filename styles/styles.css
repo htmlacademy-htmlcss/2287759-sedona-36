@@ -1427,7 +1427,7 @@ background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- display: none;
+ //display: none;
  }
 
 .modal-content {
@@ -1627,6 +1627,7 @@ background-color: #000000;
   border: none;
   cursor: pointer;
   color: #7561574D;
+  background-color: #F2F2F2;
   margin: 14px 10px;
  }
 
