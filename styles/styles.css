@@ -179,7 +179,9 @@ body {
   padding: 20px 12px;
   position: relative;
 }
-
+.search{
+  width: 44px;
+}
 
 .favorites-add {
   display: block;
@@ -586,6 +588,7 @@ body {
 
 .email-field:hover {
   background: #E6E6E6;
+  border-color: #E6E6E6;
 }
 
 .email-field:focus {
@@ -625,7 +628,6 @@ border: 2px solid #000000;
 .subscription-button:hover,
 .button-apply:hover,
 .button-favorite:hover,
-.pagination-link:hover,
 .hotels-search-button:hover {
   background-color: #68A2CA;
 }
@@ -1051,6 +1053,7 @@ background-color: #000000;
   background-repeat: no-repeat;
   background-position: right 20px center;
   margin-right: 70px;
+  background-color: #FFFFFF;
  }
 
 .select-control:hover {
@@ -1299,6 +1302,10 @@ background-color: #000000;
   margin-right: 8px;
 }
 
+.pagination-item:not(:first-child):hover{
+  background-color: #68A2CA;
+  border-radius: 4px;
+}
 .pagination-item:last-child {
   margin-left: 8px;
 }
@@ -1327,6 +1334,7 @@ background-color: #000000;
   color: #000;
   margin-right: 8px;
 }
+
 .footer-page {
   width: 1060px;
   margin: 0 auto;
@@ -1473,7 +1481,7 @@ background-color: #000000;
 
 .arrival-date,
 .departure-date {
-  min-width: 440px;
+  width: 440px;
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1495,6 +1503,7 @@ background-color: #000000;
 
 .arrival,
 .departure {
+  width: 120px;
   padding-right: 10px;
 }
 
@@ -1534,11 +1543,13 @@ background-color: #000000;
   }
 
 .children-label {
+  width: 50px;
   margin-right: 10px;
-  margin-left: 88px;
+  margin-left: 80px;
 }
 
 .adults-label {
+  width: 91px;
   margin-right: 46px;
 }
 
@@ -1657,11 +1668,9 @@ background-color: #000000;
   pointer-events: none;
 }
 .modal-rows {
-  display: -webkit-box;
+    display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
