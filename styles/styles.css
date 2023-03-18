@@ -166,10 +166,7 @@ body {
 
 .search:hover svg,
 .favorites:hover svg {
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-  -webkit-box-shadow: 0 0 5px;
+   -webkit-box-shadow: 0 0 5px;
           box-shadow: 0 0 5px;
 }
 
@@ -1306,8 +1303,7 @@ background-color: #000000;
 }
 
 .pagination-item:not(:first-child) {
-  width: 60px;
-  height: 60px;
+
   background-color: #82B3D3;
   border-radius: 4px;
   margin-right: 8px;
@@ -1323,12 +1319,15 @@ background-color: #000000;
 
 .pagination-link {
   text-decoration: none;
-  display: block;
-  padding: 11px 23px;
+    width: 60px;
+  height: 60px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-link span {
@@ -1336,14 +1335,13 @@ background-color: #000000;
 }
 
 .pagination-current {
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #000;
   margin-right: 8px;
+  border-radius: 4px;
 }
 .pagination-current:hover{
-  background-color: #FFFFFF;
-  color: #000;
-  margin-right: 8px;
+ pointer-events: none;
 }
 
 .footer-page {
